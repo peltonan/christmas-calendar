@@ -1,5 +1,5 @@
 import styled from "styled-components";
-/* import doorBackdrop from "./img/door_backdrop.jpg"; */
+import doorBackdrop from "./img/door_backdrop.jpg";
 
 export const StyledDoor = styled.div`
   padding-top: 100%;
@@ -31,6 +31,7 @@ export const StyledDoor = styled.div`
   }
   .back {
     position: absolute;
+    background: center / cover url(${doorBackdrop});
     top: 0px;
     left: 0px;
     z-index: 1;
@@ -59,4 +60,4 @@ export const StyledDoor = styled.div`
     border: 1px solid #fff;
     box-sizing: border-box;
   }
-  `;
+`;

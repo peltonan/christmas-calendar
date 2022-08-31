@@ -3,10 +3,12 @@ import { createGlobalStyle } from "styled-components";
 import { StyledApp } from "./AppStyles";
 import { createCalendar } from "./helpers";
 import Door from "./door";
+import Appbackground from "./img/calendar_backdrop.jpg"
 
 
 const GlobalStyle = createGlobalStyle`
   body {
+    background: center / cover url(${Appbackground});
     margin: 0;
   }
   header {
